@@ -61,10 +61,6 @@ public class SlashCommandListener extends ListenerAdapter {
                 bResultMsg = "❌ 부정. 당신의 고민거리, 아리스의 대답으로 대체되었다.\n아리스에게서 부정적인 반응 얻다.";
             }
 
-            if (bResultMsg.equals("")) {
-                bResultMsg = "❗ 오류. 당신의 고민거리, 아리스가 대답을 할 수 없습니다.\n아리스에게서 다시 시도하라는 반응 얻다.";
-            }
-
             OptionMapping optionMapping = event.getOption("고민거리");
             String enteredText = optionMapping.getAsString();
 
