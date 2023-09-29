@@ -55,6 +55,7 @@ public class applicationListener extends ListenerAdapter {
             embed.setDescription(returnEmbedMessage);
             sendMessage(event, returnMessage, embed);
         }
+
         embed.clear();
     }
 
